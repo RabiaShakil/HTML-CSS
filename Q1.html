@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magnifier</title>
+
+    <style>
+.slidecontainer {
+  width: 100%; 
+}
+
+
+.Header
+{
+  background-color: #eeeaea;
+  font-family:'Times New Roman', Times, serif;
+  
+}
+.Content
+{
+  background-color: white;
+  margin-left: 10px;
+  margin-right:10px;
+  margin-bottom:10px;
+  margin-top:10px;
+
+}
+
+
+
+    </style>
+</head>
+<body>
+  <div class="Header">
+    <h3>Magnifier Settings</h3>
+
+
+    <form>
+        <div class="Content">
+        <label><b>&nbsp;&nbsp;Zoom Box Width</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input value="auto">
+        <label><i>&nbsp;&nbsp;The width of magnifier box(default:auto)</i></label>
+        <br><br>
+
+
+   
+        <label><b>&nbsp;&nbsp;Zoom Box Height</b></label>
+        <input  value="auto">
+        <label><i>The height of magnifier box(default:auto)</i></label>
+        <br><br>
+        <label><b>&nbsp;&nbsp;Image Size</b></label>
+        <input  value="600" style="width: 30px;">
+        <label>x</label>
+        <input  value="600" style="width: 30px;">
+        <label>px</label>
+        <label><i>&nbsp;&nbsp;The size of images used within the magnifier box</i></label>
+        <br>
+        <input type="checkbox" style="margin-bottom:15px"> Do you want to hard crop the image?</label>
+        <br><br>
+        <label><b>&nbsp;&nbsp;Zoom Box Position</b></label>
+        <select name="id1" id="id1">
+          <option value="" selected="selected">Inside</option>
+        </select>
+        &nbsp;&nbsp;The magnifier position
+        <br><br>
+
+
+        <label ><b>&nbsp;&nbsp;Zoom Box Position for Mobile Devices</b></label>
+        <select name="id1" id="id1">
+          <option value="" selected="selected">Inside</option>
+        </select>
+        &nbsp;&nbsp;The magnifier position for the mobile devices(iphone & Android etc.)
+        <br><br>
+        <label ><b>&nbsp;&nbsp;Loading Label</b></label>
+        <input value="Loading...."><br><br>
+
+
+        <label ><b>&nbsp;&nbsp;Lens Opacity</b></label>
+        <div class="slidecontainer">
+            <input type="range" min="1" max="100" value="50">
+            <button>0.1</button>
+            <br><br>
+            
+            
+          </div>
+          
+
+
+        <label ><b>&nbsp;&nbsp;Blur</b>
+        <input type="checkbox" style="margin-bottom:15px "> Add a blur effect to the small image on mouse hover</label>
+  
+
+
+
+
+      </div>
+        
+      </form>
+
+    </div>
+   
+    
+
+
+</body>
+</html>

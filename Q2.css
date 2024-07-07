@@ -1,0 +1,73 @@
+.container{
+    background-color: rgb(12, 73, 12);
+    width: 650px;
+    height: 290px;
+    margin: 80px auto;
+    padding-top: 90px;
+    padding-right:20px ;
+    padding-bottom:0px;
+    padding-left:20px;
+    position: relative;
+    border-radius: 10px;   
+}
+
+.piano {
+   background-color: black;
+   width:630px;
+   height:180px;
+   padding-left: 2px;
+   overflow: hidden;
+   
+}
+  
+.whitekey{
+    background-color: white;
+    position: relative;
+    float: left;
+    border-radius: 3px;
+    width: 41px;
+    height: 175px;
+    margin: 2px; 
+   
+}
+
+  
+.whitekey.black-key::after {
+    background-color: #1d1e22;
+    content:"" ;
+    position: absolute;
+    border-radius: 3px;
+    left: -18px;
+    width: 32px;
+    height: 100px;
+   
+}
+  
+ 
+  
+@media (max-width: 768px) 
+{
+    .container 
+    {
+      width: 340px;
+    }
+    .piano
+    {
+      width: 318px;
+    }
+  
+    
+}
+  
+@media ( min-width: 768px) and (max-width: 1199px)
+{
+    .container
+    {
+       width: 650px;
+    }
+    .piano
+    {
+      width: 630px;
+    }
+  }
+  
